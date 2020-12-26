@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-memcrab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memCrab/eslint-config-memcrab.git"
+  },
+  "keywords": [
+    "eslint",
+    "memcrab"
+  ],
+  "author": "Max Mykhailenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memCrab/eslint-config-memcrab/issues"
+  },
+  "homepage": "https://github.com/memCrab/eslint-config-memcrab#readme",
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "eslint-plugin-no-loops": ">=0.3.0",
+    "eslint-plugin-simple-import-sort": ">= 7",
+    "@typescript-eslint/parser": ">= 4.2",
+    "eslint-plugin-react": ">= 7.21",
+    "eslint-plugin-react-hooks": ">= 4.2",
+  }
+}
