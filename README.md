@@ -5,7 +5,7 @@ npm i --save-dev eslint-config-memcrab
 
 If using npm 5+, use this shortcut
 ```
-npx install-peerdeps --save-dev eslint-config-memcrab
+npx install-peerdeps --dev eslint-config-memcrab
 ```
 
 If not 
