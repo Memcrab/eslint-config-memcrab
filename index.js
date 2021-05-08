@@ -1,17 +1,23 @@
 module.exports = {
-  "parser": "@typescript-eslint/parser",
-  "env": {
-    "browser": true,
-    "node": true
+  parser: "@typescript-eslint/parser",
+  env: {
+    browser: true,
+    node: true,
   },
-  "plugins": ["react", "react-hooks", "no-loops", "simple-import-sort"],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
+  plugins: [
+    "react",
+    "react-hooks",
+    "no-loops",
+    "simple-import-sort",
+    "react-perf",
+  ],
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
-  "ignorePatterns": ["**/*.d.ts"],
-  "rules": {
+  ignorePatterns: ["**/*.d.ts"],
+  rules: {
     "no-console": "warn",
     "for-direction": "error",
     "getter-return": "error",
@@ -56,13 +62,13 @@ module.exports = {
     "array-callback-return": "error",
     "block-scoped-var": "error",
     "class-methods-use-this": "error",
-    "complexity": ["error", { "max": 25 }],
+    complexity: ["error", { max: 25 }],
     "consistent-return": "error",
     "default-case": "error",
     "default-case-last": "error",
     "default-param-last": "error",
     "dot-notation": "error",
-    "eqeqeq": "error",
+    eqeqeq: "error",
     "max-classes-per-file": ["error", 5],
     "no-alert": "error",
     "no-case-declarations": "error",
@@ -96,10 +102,10 @@ module.exports = {
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
     "prefer-regex-literals": "error",
-    "radix": "error",
+    radix: "error",
     "require-await": "error",
     "require-unicode-regexp": "error",
-    "yoda": "error",
+    yoda: "error",
     "no-shadow-restricted-names": "error",
     "arrow-body-style": ["error", "as-needed"],
     "constructor-super": "error",
@@ -119,7 +125,10 @@ module.exports = {
     "react/button-has-type": "error",
     "react/function-component-definition": [
       "error",
-      { "namedComponents": "function-declaration", "unnamedComponents": "arrow-function" }
+      {
+        namedComponents: "function-declaration",
+        unnamedComponents: "arrow-function",
+      },
     ],
     "react/no-array-index-key": "error",
     "react/no-children-prop": "error",
@@ -137,7 +146,7 @@ module.exports = {
     "react/self-closing-comp": "error",
     "react/jsx-boolean-value": "error",
     "react/jsx-key": "error",
-    "react/jsx-max-depth": ["error", { "max": 15 }],
+    "react/jsx-max-depth": ["error", { max: 15 }],
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-useless-fragment": "error",
     "react-hooks/rules-of-hooks": "error",
@@ -146,7 +155,7 @@ module.exports = {
     "simple-import-sort/imports": [
       "error",
       {
-        "groups": [
+        groups: [
           ["^\\u0000"],
           ["^@?\\w"],
           ["\\.const"],
@@ -155,10 +164,28 @@ module.exports = {
           ["\\.block"],
           ["\\.types"],
           ["^"],
-          ["\\.css"]
-        ]
-      }
+          ["\\.css"],
+        ],
+      },
     ],
-    "simple-import-sort/exports": "error"
-  }
+    "simple-import-sort/exports": "error",
+    "react-perf/jsx-no-new-object-as-prop": [
+      "error",
+      {
+        nativeAllowList: "all",
+      },
+    ],
+    "react-perf/jsx-no-new-array-as-prop": [
+      "error",
+      {
+        nativeAllowList: "all",
+      },
+    ],
+    "react-perf/jsx-no-new-function-as-prop": [
+      "error",
+      {
+        nativeAllowList: "all",
+      },
+    ],
+  },
 };
