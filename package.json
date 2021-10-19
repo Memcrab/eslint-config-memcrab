@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-memcrab",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/memCrab/eslint-config-memcrab#readme",
   "peerDependencies": {
-    "@typescript-eslint/parser": ">= 4.2",
+    "@typescript-eslint/parser": "4.33.0",
     "eslint": "7.32.0",
     "eslint-plugin-no-loops": ">=0.3.0",
-    "eslint-plugin-react": ">= 7.21.5",
+    "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": ">= 4.2",
     "eslint-plugin-simple-import-sort": ">= 7",
     "eslint-plugin-react-perf": ">= 3.3.0"
