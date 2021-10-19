@@ -22,7 +22,7 @@
   "homepage": "https://github.com/memCrab/eslint-config-memcrab#readme",
   "peerDependencies": {
     "@typescript-eslint/parser": ">= 4.2",
-    "eslint": ">= 7.16.0",
+    "eslint": "7.32.0",
     "eslint-plugin-no-loops": ">=0.3.0",
     "eslint-plugin-react": ">= 7.21.5",
     "eslint-plugin-react-hooks": ">= 4.2",
