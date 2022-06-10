@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/memCrab/eslint-config-memcrab#readme",
   "peerDependencies": {
-    "@typescript-eslint/parser": ">=4",
+    "@typescript-eslint/parser": ">=5",
     "eslint": ">=8",
     "eslint-plugin-no-loops": ">=0.3",
     "eslint-plugin-react": ">=7",
