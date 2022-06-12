@@ -8,7 +8,6 @@ module.exports = {
     "react",
     "react-hooks",
     "no-loops",
-    "simple-import-sort",
     "react-perf",
   ],
   settings: {
@@ -152,23 +151,6 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "no-loops/no-loops": "error",
-    "simple-import-sort/imports": [
-      "error",
-      {
-        groups: [
-          ["^\\u0000"],
-          ["^@?\\w"],
-          ["\\.const"],
-          ["\\.screen"],
-          ["\\.provider"],
-          ["\\.block"],
-          ["\\.types"],
-          ["^"],
-          ["\\.css"],
-        ],
-      },
-    ],
-    "simple-import-sort/exports": "error",
     "react-perf/jsx-no-new-object-as-prop": [
       "error",
       {
