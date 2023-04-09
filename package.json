@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-memcrab",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,15 @@
   "peerDependencies": {
     "@typescript-eslint/parser": ">=5",
     "eslint": ">=8",
+    "eslint-plugin-jsdoc": ">=40.1.0",
     "eslint-plugin-no-loops": ">=0.3",
     "eslint-plugin-react": ">=7",
     "eslint-plugin-react-hooks": ">= 4",
-    "eslint-plugin-react-perf": ">= 3.3.0"
+    "eslint-plugin-react-perf": ">= 3.3.0",
+    "@getify/eslint-plugin-proper-arrows": ">= 3.3.0",
+    "@typescript-eslint/eslint-plugin": ">=5"
+  },
+  "devDependencies": {
+    "prettier": "2.8.7"
   }
 }
