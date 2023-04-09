@@ -18,8 +18,7 @@ module.exports = {
     },
   },
   parserOptions: {
-    // project: true,
-    project: ['../worklogs-report/tsconfig.json'],
+    project: true,
     tsconfigRootDir: __dirname,
   },
   ignorePatterns: ['**/*.d.ts'],
