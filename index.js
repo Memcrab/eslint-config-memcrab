@@ -19,7 +19,6 @@ module.exports = {
   },
   parserOptions: {
     project: true,
-    tsconfigRootDir: __dirname,
   },
   ignorePatterns: ['**/*.d.ts'],
   rules: {
