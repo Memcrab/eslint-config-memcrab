@@ -10,5 +10,5 @@ npx install-peerdeps --dev eslint-config-memcrab
 
 If not 
 ```
-npm i --save-dev eslint eslint-plugin-no-loops @typescript-eslint/parser eslint-plugin-react eslint-plugin-react-hooks
+npm i --save-dev eslint eslint-plugin-no-loops @typescript-eslint/parser eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsdoc @getify/eslint-plugin-proper-arrows @typescript-eslint/eslint-plugin
 ```
