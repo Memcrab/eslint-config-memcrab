@@ -239,7 +239,7 @@ module.exports = {
       { selector: 'variableLike', format: ['camelCase', 'UPPER_CASE'] },
       {
         selector: ['function'],
-        format: ['camelCase'],
+        format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'allow',
       },
       {
@@ -318,13 +318,7 @@ module.exports = {
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
-    '@typescript-eslint/prefer-readonly-parameter-types': [
-      'error',
-      {
-        checkParameterProperties: true,
-        ignoreInferredTypes: true,
-      },
-    ],
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off', // only because React.Node is mutable
     '@typescript-eslint/prefer-reduce-type-parameter': 'error',
     '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/prefer-return-this-type': 'error',
