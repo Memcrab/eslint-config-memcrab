@@ -3,6 +3,15 @@
 npm i --save-dev eslint-config-memcrab
 ```
 
+Add to the tsconfig next lines
+```json
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+```
+
 If using npm 5+, use this shortcut
 ```
 npx install-peerdeps --dev eslint-config-memcrab
